@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 16, 2023 at 02:23 AM
+-- Generation Time: Aug 16, 2023 at 06:01 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -74,7 +74,9 @@ CREATE TABLE `tb_agenda` (
 
 INSERT INTO `tb_agenda` (`id`, `nosurat`, `tglsurat`, `tglteri`, `perihal`, `isi`, `instansi`, `file_surat`, `ditujukan`, `ditujukan1`, `ditujukan2`, `ditujukan3`, `ditujukan4`, `balas`, `catatan`, `cat_kap`, `status`, `status_kap`, `stat`, `stat_balas`, `track1`) VALUES
 (34, '3411201100', '2023-08-15', '2023-08-15', 'surat proposal', '123', 'sekertaris', 'Cetak_Laporan.pdf', NULL, 'Kasubag Keuangan', NULL, NULL, NULL, 'Makasih', 'siapp', NULL, 1, 1, 1, 1, 'Surat telah Terkirim <br> Ke Sekertaris KPU<br> Tanggal :15-08-2023'),
-(36, '3411201101', '2023-08-15', '2023-08-15', 'surat proposal', 'sadasd', 'ga tau', 'Cetak_Laporan1.pdf', 'Kasubag Teknis dan Hubmas', NULL, NULL, NULL, NULL, NULL, 'penting', NULL, 1, 0, NULL, 0, 'Surat telah Terkirim <br> Ke Sekertaris KPU<br> Tanggal :15-08-2023');
+(36, '3411201101', '2023-08-15', '2023-08-15', 'surat proposal', 'sadasd', 'ga tau', 'Cetak_Laporan1.pdf', 'Kasubag Teknis dan Hubmas', NULL, NULL, NULL, NULL, NULL, 'penting', NULL, 1, 0, NULL, 0, 'Surat telah Terkirim <br> Ke Sekertaris KPU<br> Tanggal :15-08-2023'),
+(37, '3411201100', '2023-08-16', '2023-08-16', 'surat proposal', 'sdasda', 'sekertaris', 'Cetak_Laporan2.pdf', NULL, 'Kasubag Keuangan', NULL, NULL, NULL, 'makasih', 'penting', NULL, 1, 1, 1, 0, 'Surat telah Terkirim <br> Ke Sekertaris KPU<br> Tanggal :16-08-2023'),
+(38, '3411201111', '2023-08-16', '2023-08-16', 'surat proposal', 'sdadwa', 'pemda', 'PROPOSAL_KERJA_PRAKTIK(Rayhan_Irawan_3411201104__Liony_Puspita_Dewi_3411201117)1.pdf', NULL, 'Kasubag Keuangan', NULL, NULL, NULL, NULL, 'penting', NULL, 1, 0, NULL, 0, 'Surat telah Terkirim <br> Ke Sekertaris KPU<br> Tanggal :16-08-2023');
 
 -- --------------------------------------------------------
 
@@ -95,7 +97,9 @@ CREATE TABLE `tb_statuski` (
 
 INSERT INTO `tb_statuski` (`id`, `id_surat`, `ditujukan`, `status`) VALUES
 (32, 34, NULL, '0'),
-(34, 36, 'Kasubag Teknis dan Hubmas', '1');
+(34, 36, 'Kasubag Teknis dan Hubmas', '1'),
+(35, 37, NULL, '0'),
+(36, 38, NULL, '0');
 
 -- --------------------------------------------------------
 
@@ -116,7 +120,9 @@ CREATE TABLE `tb_statuskii` (
 
 INSERT INTO `tb_statuskii` (`id`, `id_surat`, `ditujukan`, `status`) VALUES
 (32, 34, NULL, '0'),
-(34, 36, NULL, '0');
+(34, 36, NULL, '0'),
+(35, 37, NULL, '0'),
+(36, 38, NULL, '0');
 
 -- --------------------------------------------------------
 
@@ -137,7 +143,9 @@ CREATE TABLE `tb_statuskiii` (
 
 INSERT INTO `tb_statuskiii` (`id`, `id_surat`, `ditujukan`, `status`) VALUES
 (32, 34, NULL, '0'),
-(34, 36, NULL, '0');
+(34, 36, NULL, '0'),
+(35, 37, NULL, '0'),
+(36, 38, NULL, '0');
 
 -- --------------------------------------------------------
 
@@ -158,7 +166,9 @@ CREATE TABLE `tb_statuskiv` (
 
 INSERT INTO `tb_statuskiv` (`id`, `id_surat`, `ditujukan`, `status`) VALUES
 (32, 34, NULL, '0'),
-(34, 36, NULL, '0');
+(34, 36, NULL, '0'),
+(35, 37, NULL, '0'),
+(36, 38, NULL, '0');
 
 -- --------------------------------------------------------
 
@@ -181,8 +191,10 @@ CREATE TABLE `tb_tracking` (
 
 INSERT INTO `tb_tracking` (`id`, `id_surat`, `nosurat`, `track2`, `track3`, `track4`) VALUES
 (4, NULL, 'w3333aa', NULL, NULL, NULL),
-(22, 34, '3411201100', 'Sekertaris KPU <br>mengirim surat ke : <br>Kasubag Keuangan<br><br><br><br><br> Tanggal : 15-08-2023', 'Kasubag <br> Mengirim Kembali Surat <br> Ke Sekertaris KPU<br> Tanggal15-08-2023', 'Sekertaris KPU <br> Mengirim Surat Ke : <br><br><br><br><br> Tanggal : 15-08-2023'),
-(24, 36, '3411201101', 'Sekertaris KPU <br>mengirim surat ke : <br><br>Kasubag Teknis dan Hubmas<br><br><br><br> Tanggal : 15-08-2023', NULL, NULL);
+(22, 37, '3411201100', 'Sekertaris KPU <br>mengirim surat ke : <br>Kasubag Keuangan<br><br><br><br><br> Tanggal : 16-08-2023', 'Kasubag Keuangan <br> Mengirim Kembali Surat <br> Ke Sekertaris KPU<br> Tanggal16-08-2023', 'Sekertaris KPU <br> Mengirim Surat Ke : <br><br><br><br><br> Tanggal : 15-08-2023'),
+(24, 36, '3411201101', 'Sekertaris KPU <br>mengirim surat ke : <br><br>Kasubag Teknis dan Hubmas<br><br><br><br> Tanggal : 15-08-2023', NULL, NULL),
+(25, 37, '3411201100', 'Sekertaris KPU <br>mengirim surat ke : <br>Kasubag Keuangan<br><br><br><br><br> Tanggal : 16-08-2023', 'Kasubag Keuangan <br> Mengirim Kembali Surat <br> Ke Sekertaris KPU<br> Tanggal16-08-2023', NULL),
+(26, 38, '3411201111', 'Sekertaris KPU <br>mengirim surat ke : <br>Kasubag Keuangan<br><br><br><br><br> Tanggal : 16-08-2023', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -206,14 +218,14 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `nama`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
-(1, 'Unjani', 'Admin', '20200812_203832.jpg', '$2y$10$XXffVeaDRE5tu4PRZmUcP.HYH7qt22TI5csgudk9L0x.6asO7JGAG', 1, 1, 1577927356),
-(15, 'Andi', '123', 'default.jpg', '$2y$10$9Ii8pasFHOVrihuk.2OJT.nj2BbiX6/SAvk7d1WuXgYmxZq58x90.', 3, 1, 1624710866),
+(1, 'Unjani', 'Admin', 'PASPHOTO_ALFIN_GERLIANDEVA1.jpg', '$2y$10$XXffVeaDRE5tu4PRZmUcP.HYH7qt22TI5csgudk9L0x.6asO7JGAG', 1, 1, 1577927356),
+(15, 'Alfin', '123', 'default.jpg', '$2y$10$9Ii8pasFHOVrihuk.2OJT.nj2BbiX6/SAvk7d1WuXgYmxZq58x90.', 3, 1, 1624710866),
 (16, 'DANNY M.M PORA, S.STP', '246', 'default.jpg', '$2y$10$MqrrMULVIds21ZkFwXcGfuojG1KWgQRWgE653VrvlEXyikUSraDAO', 4, 1, 1624713076),
 (17, 'REGIA RAHMANIA, S.IP', '234', 'default.jpg', '$2y$10$nNINLOYz/RWaeqSgSJIYL.tFwUbNy5k2gVpyxKa7IwkZ5ZfrEp9XW', 5, 1, 1624750061),
 (18, 'ATIK MUSRIFA, S.IP, M.AP', '321', 'default.jpg', '$2y$10$j/zAdKwhri0ESeYq8huHs.XG2Lfxcr65VCcAAnooqtldBXyzDQ3Ey', 6, 1, 1624750930),
 (19, 'GITASARI SISWINARTI, SH', '146', 'default.jpg', '$2y$10$24CLkd4H1xkzkiQtBgBLauULb8f75hQaXDFZ391OxaknnxBIhTF6O', 7, 1, 1624751853),
 (20, 'RIMA NURMALINA, S.IP', '124', 'default.jpg', '$2y$10$B9WoHa85g4hNTeL03uVAh.Ttrrjzv8fTI5dt8hD8aC.G6W7LSfnGi', 8, 1, 1624751925),
-(21, 'Andika', '432', 'default.jpg', '$2y$10$alT7dsEIMuDKNLAQ/NcMd.CLX1dLasOn..GmlOluiL.y9qjqJ9Utu', 9, 1, 1624752518),
+(21, 'Rifal', '432', 'default.jpg', '$2y$10$alT7dsEIMuDKNLAQ/NcMd.CLX1dLasOn..GmlOluiL.y9qjqJ9Utu', 9, 1, 1624752518),
 (22, 'Unjani', '123456789', 'default.jpg', '$2y$10$aG0S0Bwazu00WP6/jh1q0umGLWN2IevgUvkkp9hsg3g3ANz/L49ra', 1, 1, 1626991990);
 
 -- --------------------------------------------------------
@@ -290,7 +302,7 @@ INSERT INTO `user_menu` (`id`, `name`, `menu`) VALUES
 (5, 'Kasubag Teknis dan Hubmas', 'Bidangi'),
 (6, 'Kasubag Perencanaan , Program dan Data', 'Bidangii'),
 (7, 'Kasubag Hukum dan SDM', 'Bidangiii'),
-(8, 'Kapala Bidang PP IV', 'Bidangiv'),
+(8, 'Kasubag', 'Bidangiv'),
 (9, 'Monitoring Surat', 'monitor'),
 (15, 'Manajemen Arsip Keluar', 'Arsip'),
 (16, 'Setting Menu', 'Menu'),
@@ -319,7 +331,7 @@ INSERT INTO `user_role` (`id`, `role`) VALUES
 (6, 'Kasubag Teknis dan Hubmas'),
 (7, 'Kasubag Perencanaan , Program dan Data'),
 (8, 'Kasubag Hukum dan SDM'),
-(9, 'Kapala Bidang PP IV');
+(9, 'Kasubag');
 
 -- --------------------------------------------------------
 
@@ -462,37 +474,37 @@ ALTER TABLE `arske`
 -- AUTO_INCREMENT for table `tb_agenda`
 --
 ALTER TABLE `tb_agenda`
-  MODIFY `id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `tb_statuski`
 --
 ALTER TABLE `tb_statuski`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT for table `tb_statuskii`
 --
 ALTER TABLE `tb_statuskii`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT for table `tb_statuskiii`
 --
 ALTER TABLE `tb_statuskiii`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT for table `tb_statuskiv`
 --
 ALTER TABLE `tb_statuskiv`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT for table `tb_tracking`
 --
 ALTER TABLE `tb_tracking`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `user`
