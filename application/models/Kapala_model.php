@@ -11,7 +11,7 @@ class Kapala_model extends CI_Model
 
     public function suratbelumbaca()
     {
-        $query = $this->db->get_where('tb_agenda', ['status_kap' => 0, 'ditujukan1' => 'Kasubag']);
+        $query = $this->db->get_where('tb_agenda', ['status_kap' => 0, 'ditujukan1' => 'Kasubag Keuangan']);
         if ($query->num_rows() > 0) {
             return $query->num_rows();
         } else {
@@ -21,7 +21,7 @@ class Kapala_model extends CI_Model
 
     public function suratsudahbaca()
     {
-        $query = $this->db->get_where('tb_agenda', ['status_kap' => 1, 'ditujukan1' => 'Kasubag']);
+        $query = $this->db->get_where('tb_agenda', ['status_kap' => 1, 'ditujukan1' => 'Kasubag Keuangan']);
         if ($query->num_rows() > 0) {
             return $query->num_rows();
         } else {

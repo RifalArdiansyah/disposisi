@@ -86,20 +86,20 @@ include "tgl.php";
                                 </div>
 
                                 <div class="form-check row ml-2">
-                                    <input class="form-check-input" type="checkbox" name="dis1" value="Kasubag">
-                                    <label for="nip">Kasubag</label>
+                                    <input class="form-check-input" type="checkbox" name="dis1" value="Kasubag Keuangan">
+                                    <label for="nip">Kasubag Keuangan</label>
                                 </div>
                                 <div class="form-check row  ml-2">
-                                    <input class="form-check-input" type="checkbox" name="dis2" value="Kapala Bidang PP I">
-                                    <label for="nip">Kapala Bidang PP I</label>
+                                    <input class="form-check-input" type="checkbox" name="dis2" value="Kasubag Teknis dan Hubmas">
+                                    <label for="nip">Kasubag Teknis dan Hubmas</label>
                                 </div>
                                 <div class="form-check row  ml-2">
                                     <input class="form-check-input" type="checkbox" name="dis3" value="Kapala Bidang PP II">
-                                    <label for="nip">Kapala Bidang PP II</label>
+                                    <label for="nip">Kasubag Perencanaan, Program dan Data</label>
                                 </div>
                                 <div class="form-check row  ml-2">
                                     <input class="form-check-input" type="checkbox" name="dis4" value="Kapala Bidang PP III">
-                                    <label for="nip">Kapala Bidang PP III</label>
+                                    <label for="nip">Kasubag Hukum dan SDM</label>
                                 </div>
                                 <div class="form-check row  ml-2">
                                     <input class="form-check-input" type="checkbox" name="dis5" value="Kapala Bidang PP IV">

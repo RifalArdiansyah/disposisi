@@ -24,7 +24,7 @@ class Agenda_model extends CI_Model
 
     public function suratbelum()
     {
-        $query = $this->db->get_where('tb_agenda', ['stat_balas' => 0, 'ditujukan1' => 'Kasubag']);
+        $query = $this->db->get_where('tb_agenda', ['stat_balas' => 0, 'ditujukan1' => 'Kasubag Keuangan']);
         if ($query->num_rows() > 0) {
             return $query->num_rows();
         } else {
@@ -34,7 +34,7 @@ class Agenda_model extends CI_Model
 
     public function suratsudah()
     {
-        $query = $this->db->get_where('tb_agenda', ['stat_balas' => 1, 'ditujukan1' => 'Kasubag']);
+        $query = $this->db->get_where('tb_agenda', ['stat_balas' => 1, 'ditujukan1' => 'Kasubag Keuangan']);
         if ($query->num_rows() > 0) {
             return $query->num_rows();
         } else {
@@ -64,13 +64,13 @@ class Agenda_model extends CI_Model
     public function bidangi()
     {
 
-        $query = $this->db->get_where('tb_agenda', ['ditujukan' => 'Kapala Bidang PP I']);
+        $query = $this->db->get_where('tb_agenda', ['ditujukan' => 'Kasubag Teknis dan Hubmas']);
         return $query->result_array();
     }
 
     public function statuski()
     {
-        $query = "SELECT n.nosurat, n.perihal, n.instansi, n.tglteri, i.status, n.id FROM tb_agenda AS n INNER JOIN tb_statuski AS i on n.id = i.id_surat WHERE n.ditujukan = 'Kapala Bidang PP I' ORDER BY n.id DESC ";
+        $query = "SELECT n.nosurat, n.perihal, n.instansi, n.tglteri, i.status, n.id FROM tb_agenda AS n INNER JOIN tb_statuski AS i on n.id = i.id_surat WHERE n.ditujukan = 'Kasubag Teknis dan Hubmas' ORDER BY n.id DESC ";
         return $this->db->query($query)->result_array();
     }
 
@@ -108,7 +108,7 @@ class Agenda_model extends CI_Model
     public function kapala()
     {
         $this->db->order_by('id', 'DESC');
-        $query = $this->db->get_where('tb_agenda', ['ditujukan1' => 'Kasubag']);
+        $query = $this->db->get_where('tb_agenda', ['ditujukan1' => 'Kasubag Keuangan']);
         return $query->result_array();
     }
 

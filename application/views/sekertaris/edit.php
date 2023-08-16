@@ -75,28 +75,28 @@ include "tgl.php";
                                 </div>
 
                                 <div class="form-check row ml-2">
-                                    <input class="form-check-input" type="checkbox" name="dis1" value="Kasubag" <?php if ($detail['ditujukan1'] == 'Kasubag') {
-                                                                                                                    echo "checked";
-                                                                                                                } ?>>
-                                    <label for="nip">Kasubag</label>
-                                </div>
-                                <div class="form-check row  ml-2">
-                                    <input class="form-check-input" type="checkbox" name="dis2" value="Kapala Bidang PP I" <?php if ($detail['ditujukan'] == 'Kapala Bidang PP I') {
+                                    <input class="form-check-input" type="checkbox" name="dis1" value="Kasubag Keuangan" <?php if ($detail['ditujukan1'] == 'Kasubag Keuangan') {
                                                                                                                                 echo "checked";
                                                                                                                             } ?>>
-                                    <label for="nip">Kapala Bidang PP I</label>
+                                    <label for="nip">Kasubag Keuangan</label>
+                                </div>
+                                <div class="form-check row  ml-2">
+                                    <input class="form-check-input" type="checkbox" name="dis2" value="Kasubag Teknis dan Hubmas" <?php if ($detail['ditujukan'] == 'Kasubag Teknis dan Hubmas') {
+                                                                                                                                        echo "checked";
+                                                                                                                                    } ?>>
+                                    <label for="nip">Kasubag Teknis dan Hubmas</label>
                                 </div>
                                 <div class="form-check row  ml-2">
                                     <input class="form-check-input" type="checkbox" name="dis3" value="Kapala Bidang PP II" <?php if ($detail['ditujukan2'] == 'Kapala Bidang PP II') {
                                                                                                                                 echo "checked";
                                                                                                                             } ?>>
-                                    <label for="nip">Kapala Bidang PP II</label>
+                                    <label for="nip">Kasubag Perencanaan, Program dan Data</label>
                                 </div>
                                 <div class="form-check row  ml-2">
                                     <input class="form-check-input" type="checkbox" name="dis4" value="Kapala Bidang PP III" <?php if ($detail['ditujukan3'] == 'Kapala Bidang PP III') {
                                                                                                                                     echo "checked";
                                                                                                                                 } ?>>
-                                    <label for="nip">Kapala Bidang PP III</label>
+                                    <label for="nip">Kasubag Hukum dan SDM</label>
                                 </div>
                                 <div class="form-check row  ml-2">
                                     <input class="form-check-input" type="checkbox" name="dis5" value="Kapala Bidang PP IV" <?php if ($detail['ditujukan4'] == 'Kapala Bidang PP IV') {

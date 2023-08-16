@@ -127,15 +127,15 @@ include "tgl.php";
                             <label for=""> <strong>Ditujukan Kepada :</strong></label>
                         </div>
 
-                        <!-- <div class="form-check row ml-2">
-                                            <input class="form-check-input" type="checkbox" name="dis1" value="Kapala Bappeda">
-                                            <label for="nip">Kapala Bappeda</label>
-                                </div> -->
+                        <div class="form-check row ml-2">
+                            <input class="form-check-input" type="checkbox" name="dis1" value="Kasubag Keuangan>
+                                            <label for=" nip">Kasubag Keuangan</label>
+                        </div>
                         <div class="form-check row  ml-2">
-                            <input class="form-check-input" type="checkbox" name="dis2" value="Kapala Bidang PP I" <?php if ($detail['ditujukan'] == 'Kapala Bidang PP I') {
-                                                                                                                        echo "checked";
-                                                                                                                    } ?>>
-                            <label for="nip">Kapala Bidang PP I</label>
+                            <input class="form-check-input" type="checkbox" name="dis2" value="Kasubag Teknis dan Hubmas" <?php if ($detail['ditujukan'] == 'Kasubag Teknis dan Hubmas') {
+                                                                                                                                echo "checked";
+                                                                                                                            } ?>>
+                            <label for="nip">Kasubag Teknis dan Hubmas</label>
                         </div>
                         <div class="form-check row  ml-2">
                             <input class="form-check-input" type="checkbox" name="dis3" value="Kapala Bidang PP II" <?php if ($detail['ditujukan2'] == 'Kapala Bidang PP II') {

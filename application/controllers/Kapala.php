@@ -73,7 +73,7 @@ class Kapala extends CI_Controller
 
       $data2 = [
         'id_surat' => $this->input->post('id'),
-        'track3' => "Kasubag <br> Mengirim Kembali Surat <br> Ke Sekertaris KPU" . "<br> Tanggal" . date('d-m-Y')
+        'track3' => "Kasubag Keuangan <br> Mengirim Kembali Surat <br> Ke Sekertaris KPU" . "<br> Tanggal" . date('d-m-Y')
       ];
 
 

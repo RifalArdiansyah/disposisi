@@ -103,10 +103,10 @@
             <div class="col-sm-10">
               <select name="jk" id="dis" class="form-control">
                 <option value="">Pilih</option>
-                <option value="Kasubag">Kasubag</option>
-                <option value="Kapala Bidang PP I">Kapala Bidang PP I</option>
-                <option value="Kapala Bidang PP II">Kapala Bidang PP II</option>
-                <option value="Kapala Bidang PP III">Kapala Bidang PP III</option>
+                <option value="Kasubag Keuangan ">Kasubag Keuangan</option>
+                <option value="Kasubag Teknis dan Hubmas">Kasubag Teknis dan Hubmas</option>
+                <option value="Kapala Bidang PP II">Kasubag Perencanaan, Program dan Data</option>
+                <option value="Kapala Bidang PP III">Kasubag Hukum dan SDM</option>
                 <option value="Kapala Bidang PP IV">Kapala Bidang PP IV</option>
               </select>
             </div>
