@@ -76,7 +76,7 @@
 
   </div>
 
-  <h6 class="text-center text-white"><strong>Info Notifikasi Surat Masuk Bagian <br> kasubag</strong></h6><br>
+  <h6 class="text-center text-white"><strong>Info Notifikasi Surat Masuk Bagian <br> Kasubag Keuangan</strong></h6><br>
 
   <!-- Content Row -->
   <div class="row">
@@ -135,7 +135,7 @@
 
   </div>
 
-  <h6 class="text-center text-white"><strong>Info Notifikasi Surat Masuk Bagian <br> Kapala Bidang PP I</strong></h6><br>
+  <h6 class="text-center text-white"><strong>Info Notifikasi Surat Masuk Bagian <br> Kasubag Teknis dan Humas</strong></h6><br>
 
   <!-- Content Row -->
   <div class="row">
@@ -191,7 +191,7 @@
 
   </div>
 
-  <h6 class="text-center text-white"><strong>Info Notifikasi Surat Masuk Bagian <br> Kapala Bidang PP II</strong></h6><br>
+  <h6 class="text-center text-white"><strong>Info Notifikasi Surat Masuk Bagian <br> Kasubag Perencanaan , Program dan Data</strong></h6><br>
 
   <!-- Content Row -->
   <div class="row">
@@ -247,7 +247,7 @@
 
   </div>
 
-  <h6 class="text-center text-white"><strong>Info Notifikasi Surat Masuk Bagian <br> Kapala Bidang PP III</strong></h6><br>
+  <h6 class="text-center text-white"><strong>Info Notifikasi Surat Masuk Bagian <br> Kasubag Hukum dan SDM</strong></h6><br>
 
   <!-- Content Row -->
   <div class="row">
@@ -304,7 +304,7 @@
   </div>
 
 
-  <h6 class="text-center text-white"><strong>Info Notifikasi Surat Masuk Bagian <br> Kapala Bidang PP IV</strong></h6><br>
+  <h6 class="text-center text-white"><strong>Info Notifikasi Surat Masuk Bagian <br> Kasubag</strong></h6><br>
 
   <!-- Content Row -->
   <div class="row">

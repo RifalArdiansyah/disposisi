@@ -102,7 +102,7 @@ include "tgl.php";
                                     <input class="form-check-input" type="checkbox" name="dis5" value="Kapala Bidang PP IV" <?php if ($detail['ditujukan4'] == 'Kapala Bidang PP IV') {
                                                                                                                                 echo "checked";
                                                                                                                             } ?>>
-                                    <label for="nip">Kapala Bidang PP IV</label>
+                                    <label for="nip">Kasubag</label>
                                 </div>
 
                                 <div class="form-group row">
